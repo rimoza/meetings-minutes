@@ -1,5 +1,5 @@
-import type { Route } from "./+types/_layout";
 import { Outlet } from "react-router";
+import type { MetaFunction } from "react-router";
 import { Toaster as Sonner } from "../../src/components/ui/sonner";
 import { TooltipProvider } from "../../src/components/ui/tooltip";
 import { ThemeProvider } from "../../src/components/theme-provider";
@@ -9,7 +9,7 @@ import { AppSidebar } from "../../src/components/app-sidebar";
 
 const queryClient = new QueryClient();
 
-export function meta({}: Route.MetaArgs) {
+export const meta: MetaFunction = () => {
   return [
     { title: "Meeting Management App" },
     { name: "description", content: "Manage your meetings efficiently" },

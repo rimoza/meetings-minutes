@@ -1,7 +1,7 @@
-import type { Route } from "./+types/today";
+import type { MetaFunction } from "react-router";
 import TodayMeetings from "../../src/pages/TodayMeetings";
 
-export function meta({}: Route.MetaArgs) {
+export const meta: MetaFunction = () => {
   return [
     { title: "Today's Meetings - Meeting Management" },
     { name: "description", content: "View today's scheduled meetings" },

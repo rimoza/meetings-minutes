@@ -1,7 +1,7 @@
-import type { Route } from "./+types/login";
+import type { MetaFunction } from "react-router";
 import Login from "../../src/pages/Login";
 
-export function meta({}: Route.MetaArgs) {
+export const meta: MetaFunction = () => {
   return [
     { title: "Login - Meeting Management" },
     { name: "description", content: "Login to your account" },

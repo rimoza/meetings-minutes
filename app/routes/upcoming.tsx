@@ -1,7 +1,7 @@
-import type { Route } from "./+types/upcoming";
+import type { MetaFunction } from "react-router";
 import UpcomingMeetings from "../../src/pages/UpcomingMeetings";
 
-export function meta({}: Route.MetaArgs) {
+export const meta: MetaFunction = () => {
   return [
     { title: "Upcoming Meetings - Meeting Management" },
     { name: "description", content: "View your upcoming meetings" },

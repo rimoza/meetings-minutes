@@ -1,7 +1,7 @@
-import type { Route } from "./+types/edit.$id";
+import type { MetaFunction } from "react-router";
 import EditMeeting from "../../src/pages/EditMeeting";
 
-export function meta({}: Route.MetaArgs) {
+export const meta: MetaFunction = () => {
   return [
     { title: "Edit Meeting - Meeting Management" },
     { name: "description", content: "Edit meeting details" },
