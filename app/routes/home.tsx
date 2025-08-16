@@ -1,5 +1,5 @@
 import type { Route } from "./+types/home";
-import App from "../../src/App";
+import { Navigate } from "react-router";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -9,5 +9,5 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <App />;
+  return <Navigate to="/" replace />;
 }
